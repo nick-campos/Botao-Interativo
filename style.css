@@ -1,0 +1,42 @@
+/*Definidas cores principais na raiz do site*/
+:root {
+    --blue: #007bff; 
+    --black: #000000; 
+    --white: #ffffff; 
+    --gray: #f8f9fa;
+}
+
+.light-theme {
+    --bg: var(--blue);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fontColor);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease; /*Transição suave entre as cores*/
+}
+
+button {
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    border: none;
+    padding: 10px 20px; /* Aumenta o espaço interno */
+    cursor: pointer; /* Muda o cursor para "mãozinha" ao passar por cima */
+    font-size: 16px;
+    border-radius: 5px; /* Deixa as bordas arredondadas */
+}
+
+button:hover {
+    opacity: 0.8; /*Ao passar pelo botão, ele fica com 80% de opacidade */
+}
